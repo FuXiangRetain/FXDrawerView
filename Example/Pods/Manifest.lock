@@ -1,0 +1,16 @@
+PODS:
+  - FXDrawerView (0.1.0)
+
+DEPENDENCIES:
+  - FXDrawerView (from `../`)
+
+EXTERNAL SOURCES:
+  FXDrawerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FXDrawerView: 66b25ab519ded62520c60f8c315d1aa3b49adc2e
+
+PODFILE CHECKSUM: 56d0ebeaa9c0d5aa203242d8142fda2ac4f17312
+
+COCOAPODS: 1.11.2

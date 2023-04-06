@@ -22,7 +22,7 @@ pod 'FXDrawerView'
 
 ## Author
 
-fuxiangretain@163.com, 1012533090@qq.com
+fuxiangretain@163.com
 
 ## License
 

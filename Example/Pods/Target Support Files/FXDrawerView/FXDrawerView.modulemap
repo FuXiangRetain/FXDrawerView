@@ -1,0 +1,6 @@
+framework module FXDrawerView {
+  umbrella header "FXDrawerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
