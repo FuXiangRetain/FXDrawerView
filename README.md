@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/FXDrawerView.svg?style=flat)](https://cocoapods.org/pods/FXDrawerView)
 [![Platform](https://img.shields.io/cocoapods/p/FXDrawerView.svg?style=flat)](https://cocoapods.org/pods/FXDrawerView)
 
+## 介绍
+融合吐司、弹窗、抽屉效果
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

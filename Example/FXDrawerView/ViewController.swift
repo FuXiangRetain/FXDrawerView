@@ -116,6 +116,7 @@ class ViewController: UIViewController {
         
         let leftDrawer = FXDrawerView.createDrawer(drawerType: .left) { drawerView in
             let lab = UILabel()
+            lab.backgroundColor = .red
             lab.text = "结果"
             return lab
         } drawerSpaceContentViewBlock: { drawerView in
@@ -123,10 +124,13 @@ class ViewController: UIViewController {
             lab.text = "向右拖拽"
             return lab
         }
-        leftDrawer.backgroundColor = .red
+        leftDrawer.backgroundColor = .yellow
+        leftDrawer.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(leftDrawer)
         
-        let rightDrawer = FXDrawerView.createDrawer(drawerType: .left) { drawerView in
+        let rightDrawer = FXDrawerView.createDrawer(drawerType: .right) { drawerView in
             let lab = UILabel()
+            lab.backgroundColor = .red
             lab.text = "结果"
             return lab
         } drawerSpaceContentViewBlock: { drawerView in
@@ -134,6 +138,9 @@ class ViewController: UIViewController {
             lab.text = "向左拖拽"
             return lab
         }
+        rightDrawer.backgroundColor = .yellow
+        rightDrawer.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(rightDrawer)
 
         
         let safeArea = view.safeAreaLayoutGuide
@@ -146,6 +153,16 @@ class ViewController: UIViewController {
             
             popStackView.rightAnchor.constraint(equalTo: toastStackView.leftAnchor),
             toastStackView.widthAnchor.constraint(equalTo: popStackView.widthAnchor),
+            
+            leftDrawer.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 16),
+            leftDrawer.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -16),
+            leftDrawer.heightAnchor.constraint(equalToConstant: 44),
+            leftDrawer.topAnchor.constraint(equalTo: toastStackView.bottomAnchor, constant: 16),
+            
+            rightDrawer.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 16),
+            rightDrawer.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -16),
+            rightDrawer.heightAnchor.constraint(equalToConstant: 44),
+            rightDrawer.topAnchor.constraint(equalTo: leftDrawer.bottomAnchor, constant: 16),
             
             drawerView.leftAnchor.constraint(equalTo: view.leftAnchor),
             drawerView.rightAnchor.constraint(equalTo: view.rightAnchor),
