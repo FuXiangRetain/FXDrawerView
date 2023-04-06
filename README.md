@@ -7,6 +7,7 @@
 
 ## 介绍
 融合吐司、弹窗、抽屉效果
+![image](https://github.com/FuXiangRetain/FXDrawerView/blob/main/ezgif-2-805c45a518.gif)
 
 ## Example
 
