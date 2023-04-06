@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         _ = FXDrawerView.createPop(
             drawerType: FXDrawerView.DrawerType(rawValue: sender.tag)!,
             toView: view,
-            spaceContentTrailingOffset: 0,
+            spaceContentTrailingOffset: -16,
             drawerContentLeadingOffset: 16,
             drawerContentTrailingOffset: -16,
             drawerContentViewBlock: { drawerView in
