@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FXDrawerView_Example' do
+  pod 'FXDrawerView', :path => '../'
+
+  target 'FXDrawerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
